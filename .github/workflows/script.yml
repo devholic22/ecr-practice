@@ -1,4 +1,4 @@
-name: Test Self-Hosted Runner
+name: Test Self-Hosted Runner with Spring
 
 on:
   push:
