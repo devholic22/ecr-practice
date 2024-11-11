@@ -10,7 +10,7 @@ on:
 
 jobs:
   test-self-hosted:
-    runs-on: [self-hosted, macbook]
+    runs-on: [self-hosted, macos]
 
     steps:
       - name: Checkout repository
