@@ -1,0 +1,23 @@
+name: Test Self-Hosted Runner
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test-self-hosted:
+    runs-on: [self-hosted, macbook]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Verify self-hosted runner is working
+        run: |
+          echo "Testing on self-hosted macOS ARM64 runner"
+          uname -a
+          echo "Current date and time: $(date)"
